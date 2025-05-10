@@ -76,9 +76,36 @@ input{
 .jobs-container{
     border-radius: 2em;
     background-color: rgb(254, 252, 250);
-    padding: .5em 1em .5em 1em;
-    box-shadow: ;
+    padding: 1.5em 2em 1.5em 2em;
     margin-left: .5em;
+}
+
+.company-header{
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.company-image{
+    width: 15px;
+}
+
+.attach{
+    display: flex;
+    gap: 10px;
+}
+
+.top-companies{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+.companies-container{
+    border-radius: 1em;
+    background-color: rgb(250, 250, 248);
+    padding: 1.5em 2em 1.5em 2em;
+}
+strong{
+    color: rgb(136, 136, 247);
 }
 
 
