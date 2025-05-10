@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.illustration-img-1{
+    width:100px;
+    margin-left: 40px;
+}
+
+.hero{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.header-btn{
+    color: white;
+    background-color: rgb(117, 117, 243);
+    border: none;
+    border-radius: 5px;
+    padding: .5em 1em .5em 1em;
+    margin-left: 1em;
+}
+
+input{
+    padding: .5em;
+}
+
+.jobs-header {
+    margin-left: 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+
+}
+
+.featured-jobs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.jobs-h1{
+    margin-bottom: .5em;
+}
+
+.inline{
+    display: inline;
+}
+.jobs-p{
+    line-height: 1.5;
+}
+
+.jobs-btn{
+    margin-top: .5em;
+    border: none;
+    color: white;
+    background-color: rgb(117, 117, 243);
+    border-radius: 5px;
+    padding: .5em 1em .5em 1em;
+    margin-left: .5em;
+}
+
+.jobs-container{
+    border-radius: 2em;
+    background-color: rgb(254, 252, 250);
+    padding: .5em 1em .5em 1em;
+    box-shadow: ;
+    margin-left: .5em;
+}
+
+
+
