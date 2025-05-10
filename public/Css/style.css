@@ -75,9 +75,10 @@ input{
 
 .jobs-container{
     border-radius: 2em;
-    background-color: rgb(254, 252, 250);
+    background-color: #fff;
     padding: 1.5em 2em 1.5em 2em;
     margin-left: .5em;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);;
 }
 
 .company-header{
@@ -101,8 +102,9 @@ input{
 }
 .companies-container{
     border-radius: 1em;
-    background-color: rgb(250, 250, 248);
-    padding: 1.5em 2em 1.5em 2em;
+    background-color: #fff;
+    padding: 1.5em 3em 1.5em 2em;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);;
 }
 strong{
     color: rgb(136, 136, 247);
