@@ -8,27 +8,41 @@
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
 </head>
 <body>
+    <a href="index.html">Home</a>
+
+
   <main>
-    <h2>Job Listings</h2>
+   
     <section class="job-listings-page">
-    <div class="search-jobs">
-    <input type="text" id="search-jobs" placeholder="Search jobs..." />
-    <button class="search-btn">Search</button>
+     <h2 class="job-listing-header">Job Listings</h2>
+    <div class="search-job">
+      <div class="search-input">
+         <input type="text" id="search-jobs" placeholder="Search jobs..."  class="search-input"/>
+
+      </div>
+   
+    <div class="search-btn">
+     <button class="search-btn">Search</button>
+    </div>
+    
 
     <div class="sidebox">
-        <h4>sort by</h4>
-        <select>
+        <h3>sort by</h3>
+        <select class="sort-select">
              <option>Newest First</option>
              <option>Oldest First</option>
              <option>Company Name</option>
         </select>
-
-        <button class="apply-btn">Apply now</button>
+        <div class="apply-button">
+         <button class="apply-button">Apply now</button>
+        </div>
+        
     </div>
     </div>
-
     </section>
+
     <section class="Job-listing-container">
+      <h2 class="listings-header-2">Job Listings</h2>
         <div class="job-card">
             <h3>Software Engineer</h3>
             <p>Software Co — Brusubi, NY</p>

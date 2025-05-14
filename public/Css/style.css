@@ -9,6 +9,8 @@ body{
     height: 100vh;
     overflow-x: hidden;
 }
+
+/* styles for the home page  */
 img{
     max-width: 100%;
     height: auto;
@@ -78,7 +80,7 @@ input{
     background-color: #fff;
     padding: 1.5em 2em 1.5em 2em;
     margin-left: .5em;
-    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .company-header{
@@ -109,6 +111,75 @@ input{
 strong{
     color: rgb(136, 136, 247);
 }
+
+
+/* styles for the job listing page  */
+
+.job-listings-page{
+    align-items: center;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.search-job{
+    display: flex;
+    gap: 2em;
+  
+
+}
+
+.search-input{
+    padding: .5em;
+}
+
+.search-btn button{
+    color: white;
+    background-color: rgb(117, 117, 243);
+    border: none;
+    padding: .5em 1em .5em 1em;
+    border-radius: 5px;
+    margin-top: .5em;
+
+}
+
+
+
+.apply-button{
+    color: white;
+    background-color: rgb(117, 117, 243);
+    border: none;
+    border-radius: 5px;
+     padding: 0em 2em 0.5em .1em;
+     margin-top: 1em;
+}
+
+.sort-select{
+    padding: .5em;
+}
+
+.sidebox{
+    border-radius: 2em;
+    background-color: #fff;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5em 2em 1.5em 2em;
+
+}
+
+.Job-listing-container{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.listings-header-2{
+    align-items: center;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+
 
 
 
