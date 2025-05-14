@@ -169,6 +169,7 @@ strong{
     margin-top: 2em;
     display: flex;
     flex-direction: column;
+    gap: 2em;
 }
 
 .listings-header-2{
@@ -176,6 +177,19 @@ strong{
     margin-left: 1em;
     margin-bottom: 1em;
 }
+.h3-span{
+    font-weight: bold;
+}
+
+.job-card{
+    border-radius: 2em;
+    background-color: #fff;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5em 2em 1.5em 2em;;
+
+}
+
+
 
 
 
