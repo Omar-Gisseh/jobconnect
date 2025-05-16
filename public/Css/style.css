@@ -108,7 +108,7 @@ input{
     padding: 1.5em 3em 1.5em 2em;
     box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);;
 }
-strong{
+.blue{
     color: rgb(136, 136, 247);
 }
 
@@ -193,6 +193,96 @@ strong{
 .job-card p{
     line-height: 1.5;
 }
+  
+
+   
+/* styles for the job details */
+.job-details-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  
+}
+
+.jobs-header  {
+  font-size: 32px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.Company-location, .Company-name{
+    margin-bottom: 2em;
+}
+
+.job-description h3 {
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: .5em;
+  
+}
+
+.job-tags {
+  margin-bottom: 20px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #eef2f7;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.apply-btn {
+  padding: 10px 20px;
+  background-color:  rgb(117, 117, 243);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.job-description p, li{
+    line-height: 1.5;
+}
+
+.apply-btn:hover {
+  background-color: #2563eb;
+}
+
+.job-info-box h2 {
+  margin-top: 30px;
+  color: #111827;
+}
+
+.job-info-box p,
+.job-info-box ul {
+  margin-top: 10px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.job-info-box ul {
+  padding-left: 20px;
+}
+
+.link{
+  font-size: 24px;
+  text-decoration: none;
+  color: rgb(117, 117, 243);
+  font-weight: bold;
+  transition: color 0.3s ease;
+    
+}
+
+
 
 
 
