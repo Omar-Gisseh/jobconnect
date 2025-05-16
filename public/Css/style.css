@@ -179,6 +179,7 @@ strong{
 }
 .h3-span{
     font-weight: bold;
+    
 }
 
 .job-card{
@@ -187,6 +188,10 @@ strong{
     box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1.5em 2em 1.5em 2em;;
 
+}
+
+.job-card p{
+    line-height: 1.5;
 }
 
 
