@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply for a Job - JobConnect</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/apply.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo"><a href="index.html"> JobConnect </a></div>
+      <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="apply.html">Jobs</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="apply-container">
+    <section class="job-info">
+      <h1 class="job-title">Frontend Developer</h1>
+      <p class="job-company">at BrightTech Solutions</p>
+      <p class="job-location">Remote · Full-time</p>
+      <p class="job-description">
+        We’re looking for a talented frontend developer who is passionate about building clean user interfaces and enjoys collaborating with designers and backend engineers.
+      </p>
+    </section>
+
+    <section class="application-form-section">
+      <h2 class="form-title">Apply Now</h2>
+      <form class="application-form">
+        <label for="fullname" class="form-label">Full Name</label>
+        <input type="text" id="fullname" class="form-input" required />
+
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" id="email" class="form-input" required />
+
+        <label for="resume" class="form-label">Upload Resume</label>
+        <input type="file" id="resume" class="form-input" required />
+
+        <label for="cover" class="form-label">Cover Letter</label>
+        <textarea id="cover" class="form-input" rows="5" placeholder="Write your message here..."></textarea>
+
+        <button type="submit" class="btn btn-primary">Submit Application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-text">© 2025 JobConnect. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
