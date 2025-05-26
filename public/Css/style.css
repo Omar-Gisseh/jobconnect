@@ -65,7 +65,7 @@ input{
     line-height: 1.5;
 }
 
-.jobs-btn{
+.jobs-link {
     margin-top: .5em;
     border: none;
     color: white;
@@ -73,7 +73,16 @@ input{
     border-radius: 5px;
     padding: .5em 1em .5em 1em;
     margin-left: .5em;
+    text-decoration: none;
+    margin-top: 1em;
+    display: inline-block;
+
+    
 }
+
+
+
+
 
 .jobs-container{
     border-radius: 2em;
@@ -81,6 +90,8 @@ input{
     padding: 1.5em 2em 1.5em 2em;
     margin-left: .5em;
     box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
 }
 
 .company-header{
@@ -110,6 +121,12 @@ input{
 }
 .blue{
     color: rgb(136, 136, 247);
+}
+
+@media(min-width: 600px){
+    .header-btn{
+        margin-top: 1em;
+    }
 }
 
 
