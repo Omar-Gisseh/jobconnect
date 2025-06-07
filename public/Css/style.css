@@ -35,11 +35,13 @@ img{
     border-radius: 5px;
     padding: .5em 1em .5em 1em;
     margin-left: 1em;
+    margin-top: 1em;
 }
 
 input{
     padding: .5em;
 }
+
 
 .jobs-header {
     margin-left: 2em;
@@ -123,12 +125,6 @@ input{
     color: rgb(136, 136, 247);
 }
 
-@media(min-width: 600px){
-    .header-btn{
-        margin-top: 1em;
-    }
-}
-
 
 /* styles for the job listing page  */
 
@@ -159,6 +155,9 @@ input{
 
 }
 
+.break{
+    display: block;
+}
 
 
 .apply-button{
@@ -171,6 +170,10 @@ input{
     
 }
 
+.apply-button a{
+    text-decoration: none;
+}
+
 .sort-select{
     padding: .5em;
 }
@@ -180,6 +183,7 @@ input{
     background-color: #fff;
     box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1.5em 2em 1.5em 2em;
+    margin-left: auto;
 
 }
 
@@ -188,6 +192,10 @@ input{
     display: flex;
     flex-direction: column;
     gap: 2em;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-left: 5em;
 }
 
 .listings-header-2{
@@ -197,6 +205,7 @@ input{
 }
 .h3-span{
     font-weight: bold;
+    margin-top: 1em;
     
 }
 
@@ -210,7 +219,10 @@ input{
 
 .job-card p{
     line-height: 1.5;
+    margin-button: 1.5em;
 }
+
+
   
 
    
@@ -278,7 +290,7 @@ input{
 
 .job-info-box h2 {
   margin-top: 30px;
-  color: #111827;
+  color: #5d8cf9;
 }
 
 .job-info-box p,
@@ -295,7 +307,7 @@ input{
 .link{
   font-size: 24px;
   text-decoration: none;
-  color: rgb(117, 117, 243);
+  color: black;
   font-weight: bold;
   transition: color 0.3s ease;
     

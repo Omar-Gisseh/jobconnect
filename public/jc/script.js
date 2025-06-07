@@ -36,3 +36,13 @@ document.querySelector('.header-btn').addEventListener('click', async () => {
       featuredSection.appendChild(jobElement);
     });
 });
+
+// for menu 
+
+
+  const menuBtn = document.querySelector('.menu');
+        const navSection = document.querySelector('.nav-section');
+      
+        menuBtn.addEventListener('click', () => {
+          navSection.classList.toggle('show');
+        });

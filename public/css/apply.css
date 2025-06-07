@@ -14,7 +14,7 @@
   .job-title {
     font-size: 24px;
     font-weight: bold;
-    color: #191970;
+    color: #6a6af5;
     margin-bottom: 5px;
   }
   
@@ -29,6 +29,7 @@
     font-size: 16px;
     color: #333;
     margin-top: 15px;
+    line-height: 1.5;
   }
   
   .application-form-section {
@@ -38,7 +39,7 @@
   .form-title {
     font-size: 20px;
     font-weight: bold;
-    color: #191970;
+    color: #6a6ad7;
     margin-bottom: 20px;
   }
   
@@ -75,7 +76,7 @@
   }
   
   input[type="file"].form-input::file-selector-button {
-    background-color: #191970;
+    background-color: #6565da;
     color: #fff;
     border: none;
     padding: 8px 12px;
@@ -86,7 +87,7 @@
   }
   
   input[type="file"].form-input::file-selector-button:hover {
-    background-color: #000066;
+    background-color: #2e2ef3;
   }
   
   .btn {
@@ -100,12 +101,12 @@
   }
   
   .btn-primary {
-    background-color: #191970;
+    background-color: #4b4bcc;
     color: white;
   }
   
   .btn-primary:hover {
-    background-color: #000066;
+    background-color: #4646bd;
   }
   
   /* Responsive Design */
