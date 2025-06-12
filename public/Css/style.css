@@ -276,9 +276,22 @@ input{
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 1em;
   margin-bottom: 1em;
+  display: inline-block;
+  margin-top: 1em;
+  
 }
+
+.apply-btn, a{
+    text-decoration: none;
+  
+}
+
+.descrition-h2{
+    margin-top: 1em;
+}
+
+
 
 .job-description p, li{
     line-height: 1.5;
