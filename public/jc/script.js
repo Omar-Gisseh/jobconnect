@@ -1,4 +1,4 @@
-
+// for the home page
 
 document.querySelector('.header-btn').addEventListener('click', async () => {
  
