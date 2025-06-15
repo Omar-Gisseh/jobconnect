@@ -21,9 +21,12 @@ window.addEventListener('DOMContentLoaded', async () => {
       <span class="tag">${job.level || 'N/A'}</span>
     `;
 
-    document.querySelector('.job-description p').textContent = job.descripttion;
+    
+    document.querySelector('.job-description p').textContent = job.description || 'No description provided';
 
+    
     const requirementsList = document.querySelector('.requirements-list');
+    requirementsList.innerHTML = ''; // Clear before appending
     job.requirements?.forEach(req => {
       const li = document.createElement('li');
       li.textContent = req;
@@ -31,6 +34,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     });
 
     const perksList = document.querySelector('.perks-list');
+    perksList.innerHTML = ''; // Clear before appending
     job.perks?.forEach(perk => {
       const li = document.createElement('li');
       li.textContent = perk;

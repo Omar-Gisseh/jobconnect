@@ -26,7 +26,7 @@ document.querySelector('.header-btn').addEventListener('click', async () => {
       jobElement.innerHTML = `
         <h2 class="jobs-h1">${job.title}</h2>
         <h3>Posted ${daysAgo} day${daysAgo !== 1 ? 's' : ''} ago</h3> <!-- Dynamic "Posted X days ago" -->
-        <p class="jobs-p">${job.descripttion}</p>
+        <p class="jobs-p">${job.description}</p>
         <p><strong>${job.company}</strong> | ${job.location}</p>
         <p>Salary: ${job.salary}</p>
         <a href="job-details.html?id=${job._id}" class="jobs-link">Details</a> <!-- ❗Link to dynamic job details page -->

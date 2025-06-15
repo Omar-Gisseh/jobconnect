@@ -20,6 +20,10 @@ const app = express();
 app.use(cors());             // Allows cross-origin requests
 app.use(express.json());     // Parses incoming JSON requests
 
+// Serve static frontend files like job-details.html
+app.use(express.static("public"));
+
+
 //  ROUTE IMPORTS
 const jobRoutes = require("./src/routes/job.routes");    //  Handles /api/jobs
 const authRoutes = require("./src/routes/auth.routes");  // Handles /api/auth

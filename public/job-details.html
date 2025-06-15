@@ -11,26 +11,30 @@
   <main>
     <section class="job-details-section">
       <div class="job-header">
-        <h2 class="jobs-header">Loading...</h2>
-        <p class="Company-name"><strong>Company:</strong> </p>
-        <p class="Company-location"><strong>Location:</strong> </p>
-        <div class="tags"></div>
+        <h2 class="jobs-header" id="job-title">Loading...</h2>
+        <p class="Company-name"><strong>Company:</strong> <span id="job-company"></span> </p>
+        <p class="Company-location"><strong>Location:</strong> <span id="job-location"></span> </p>
+        <div class="tags">
+           <span class="tag" id="job-type"></span>
+          <span class="tag" id="job-mode"></span>
+           <span class="tag" id="job-level"></span>
+        </div>
         <a href="apply.html" class="apply-btn">Apply Now</a>
       </div>
 
       <div class="job-description">
         <h3>Job Description</h3>
-        <p>Loading...</p>
+        <p id="job-description">Loading...</p>
 
         <h3>Requirements</h3>
-        <ul class="requirements-list"></ul>
+        <ul class="requirements-list" id="job-requirements"></ul>
 
         <h3>Perks & Benefits</h3>
-        <ul class="perks-list"></ul>
+        <ul class="perks-list"  id="job-benefits"></ul>
       </div>
     </section>
   </main>
 
-  <script src="./js/jobDetails.js"></script>
+  <script src="./job-detail.js"></script>
 </body>
 </html>
