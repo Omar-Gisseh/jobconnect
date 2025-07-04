@@ -46,3 +46,5 @@ window.addEventListener('DOMContentLoaded', async () => {
     document.querySelector('.jobs-header').textContent = 'Error loading job details.';
   }
 });
+
+
