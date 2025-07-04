@@ -1,22 +1,41 @@
-exports.submitApplication = (req, res) => {
-  const { fullname, email, cover } = req.body;
-  const resume = req.file;
+const path = require("path");
+const fs = require("fs");
 
-  if (!fullname || !email || !cover || !resume) {
-    return res.status(400).json({ message: 'All fields are required.' });
+
+const applications = [];
+
+// POST /api/applications
+exports.submitApplication = async (req, res) => {
+  try {
+    const { fullname, email, coverLetter } = req.body;
+
+    if (!fullname || !email) {
+      return res.status(400).json({ message: "Name and email are required." });
+    }
+
+    let resumePath = null;
+
+    // If resume was uploaded
+    if (req.file) {
+      resumePath = req.file.path;
+    }
+
+    // Example: store application
+    const application = {
+      fullname,
+      email,
+      coverLetter,
+      resume: resumePath,
+      submittedAt: new Date(),
+    };
+
+    applications.push(application);
+
+    console.log("New Application:", application);
+
+    res.status(201).json({ message: "Application submitted successfully!" });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Server error while submitting application." });
   }
-
-  // Save application to DB here if needed, or just log it
-  console.log('New Application:', {
-    fullname,
-    email,
-    cover,
-    resume: resume.filename
-  });
-
-  res.status(200).json({ message: 'Application submitted successfully!' });
 };
-
-
-
-

@@ -11,36 +11,33 @@
 <body>
 
   <section>
-  <div class="header-section">
-    <header>
-      <div class="navbar-logo">
-        <a href="dashboard.html"> JobConnect </a>
-      </div>
-
-      <button class="menu" id="menu-toggle">&#9776;</button>
-
-    </header>
-  </div>
- 
-
-  <div class="nav-section">
-  
-  <nav>
-    
-    <div class="nav"> 
-      <ul class="navbar-links">
-        <li class=><a href="job-listing.html" class="nav-a">Job Listing</a></li>
-        <li class=><a href="apply.html" class="nav-a">Apply</a></li>
-        <li class=><a href="dashboard.html" class="nav-a">Dashboard</a></li>
-        <li class=><a href="login.html" class="nav-a">Login</a></li>
-      </ul>
+    <div class="header-section">
+      <header>
+        <div class="navbar-logo">
+          <a href="dashboard.html">JobConnect</a>
+        </div>
+        <button class="menu" id="menu-toggle">&#9776;</button>
+      </header>
     </div>
-  </nav>
-  </div>
+
+    <div class="nav-section">
+      <nav>
+        <div class="nav"> 
+          <ul class="navbar-links">
+            <li><a href="job-listing.html" class="nav-a">Job Listing</a></li>
+            <li><a href="apply.html" class="nav-a">Apply</a></li>
+            <li><a href="dashboard.html" class="nav-a">Dashboard</a></li>
+            <li><a href="login.html" class="nav-a">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
 
   <main class="login-container">
     <h1 class="login-title">Login to JobConnect</h1>
-    <form class="login-form">
+
+    <form class="login-form" id="login-form">
       <label for="email" class="form-label">Email</label>
       <input type="email" id="email" class="form-input" required />
 
@@ -52,6 +49,8 @@
       </div>
 
       <button type="submit" class="btn btn-primary">Login</button>
+
+      <p id="login-message" style="margin-top: 10px; font-weight: bold;"></p>
     </form>
 
     <div class="signup-link">
@@ -69,13 +68,8 @@
       </ul>
     </div>
   </footer>
-  <script>
-    const menuBtn = document.querySelector('.menu');
-        const navSection = document.querySelector('.nav-section');
-      
-        menuBtn.addEventListener('click', () => {
-          navSection.classList.toggle('show');
-        });
-  </script>
+
+  <script src="./jc/login.js"></script>
+
 </body>
 </html>
