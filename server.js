@@ -1,50 +1,43 @@
-//  Import core modules
+// Import core modules
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const dotenv = require("dotenv");
 
-//  Load environment variables from .env file
+// Load environment variables from .env file
 dotenv.config();
 
 // Import DB connection function
 const connectDB = require("./src/config/db");
 
+// Connect to MongoDB
+connectDB();
 
-connectDB(); 
-
-//  Initialize Express app
+// Initialize Express app
 const app = express();
 
-//  Middleware
-app.use(cors());             // Allows cross-origin requests
-app.use(express.json());     // Parses incoming JSON requests
+// Middleware
+app.use(cors());                   // allow cross-origin requests
+app.use(express.json());          // parse incoming JSON
+app.use(express.static("public")); // serve static files (frontend)
 
-// Serve static frontend files like job-details.html
-app.use(express.static("public"));
+// ROUTE IMPORTS
+const jobRoutes = require("./src/routes/job.routes");
+const authRoutes = require("./src/routes/auth.routes");
+const applicationRoutes = require("./src/routes/application.routes");
 
+// ROUTE MIDDLEWARE
+app.use("/api/jobs", jobRoutes);               // handle /api/jobs
+app.use("/api/auth", authRoutes);             // handle /api/auth
+app.use("/api/applications", applicationRoutes); // handle /api/applications
 
-//  ROUTE IMPORTS
-const jobRoutes = require("./src/routes/job.routes");    //  Handles /api/jobs
-const authRoutes = require("./src/routes/auth.routes");  // Handles /api/auth
-
-//  ROUTE MIDDLEWARE
-app.use("/api/jobs", jobRoutes);    // Forward job-related requests
-app.use("/api/auth", authRoutes);   // Forward auth-related requests
-
-//  TEST ROUTE
+// TEST ROUTE
 app.get("/", (req, res) => {
   res.send("API is running...");
 });
 
-
-
 // START SERVER
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`✅ Server running on http://localhost:${PORT}`);
 });
-
-// for the application
-const applicationRoutes = require('./src/routes/application.routes');
-app.use('/api/applications', applicationRoutes);

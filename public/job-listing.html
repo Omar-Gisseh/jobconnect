@@ -8,47 +8,40 @@
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
 </head>
 <body>
-   
-
-  <main>
-   
-    <section class="job-listings-page">
-     <h2 class="job-listing-header">Job Listings</h2>
+<main>
+  <section class="job-listings-page">
+    <h2 class="job-listing-header">Job Listings</h2>
     <div class="search-job">
       <div class="search-input">
-         <input type="text" id="search-jobs" placeholder="Search jobs..."  class="search-input"/>
-
+        <input type="text" id="search-jobs" placeholder="Search jobs..." class="search-input"/>
       </div>
-   
-    <div class="search-btn">
-     <button class="search-btn">Search</button>
-    </div>
-    
 
-    <div class="sidebox">
-        <h3>sort by</h3>
+      <div class="search-btn">
+        <button class="search-button">Search</button> 
+      </div>
+
+      <div class="sidebox">
+        <h3>Sort by</h3>
         <select class="sort-select">
-             <option>Newest First</option>
-             <option>Oldest First</option>
-             <option>Company Name</option>
+          <option>Newest First</option>
+          <option>Oldest First</option>
+          <option>Company Name</option>
         </select>
         <div class="apply-button">
-         <a href="login.html" class="apply-button">Apply now</a>
+          <a href="apply.html" class="apply-button">Apply now</a>
         </div> 
+      </div>
     </div>
-    
+  </section>
+
+  <section class="Job-listing-container">
+    <h2 class="listings-header-2">Job Listings</h2>
+    <div class="jobs-container">
+      
     </div>
-    </section>
+  </section>
+</main>
 
-    <section class="Job-listing-container">
-      <h2 class="listings-header-2">Job Listings</h2>
-        
-
-        
-        
-    
-    </section>
-  </main>
-  <script src="./jc/job-listing.js"></script>
+<script src="./jc/job-listing.js"></script>
 </body>
 </html>
