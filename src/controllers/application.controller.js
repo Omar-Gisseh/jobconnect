@@ -16,3 +16,7 @@ exports.submitApplication = (req, res) => {
 
   res.status(200).json({ message: 'Application submitted successfully!' });
 };
+
+
+
+
