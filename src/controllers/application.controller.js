@@ -1,4 +1,13 @@
-const Application = require('../models/application.model'); // Make sure you create this model
+const fs = require("fs");
+const path = require("path");
+const Application = require("../models/application.model");
+
+// Make sure uploads folder exists
+const uploadsDir = path.join(__dirname, "../../uploads");
+if (!fs.existsSync(uploadsDir)) {
+  fs.mkdirSync(uploadsDir, { recursive: true });
+  console.log(" Created uploads folder");
+}
 
 // POST /api/applications
 exports.submitApplication = async (req, res) => {
@@ -6,14 +15,15 @@ exports.submitApplication = async (req, res) => {
     const { fullname, email, coverLetter } = req.body;
 
     if (!fullname || !email) {
-      return res.status(400).json({ message: "Full name and email are required." });
+      return res.status(400).json({ message: "Full name and email are required" });
     }
 
     let resumePath = null;
+    let resumeUrl = null;
 
-    // If a file was uploaded
     if (req.file) {
-      resumePath = req.file.path; // this is the path saved by multer
+      resumePath = req.file.path; // Relative path
+      resumeUrl = `${req.protocol}://${req.get("host")}/${resumePath.replace("\\", "/")}`; // Full URL
     }
 
     const application = new Application({
@@ -28,9 +38,18 @@ exports.submitApplication = async (req, res) => {
 
     console.log(" New Application:", application);
 
-    res.status(201).json({ message: "Application submitted successfully!", application });
+    res.status(201).json({
+      message: "Application submitted successfully!",
+      application: {
+        fullname,
+        email,
+        coverLetter,
+        resumeUrl,
+        submittedAt: application.submittedAt,
+      },
+    });
   } catch (err) {
-    console.error("Error saving application:", err);
+    console.error(err);
     res.status(500).json({ message: "Server error while submitting application." });
   }
 };
