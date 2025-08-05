@@ -45,4 +45,7 @@ document.querySelector('.header-btn').addEventListener('click', async () => {
       
         menuBtn.addEventListener('click', () => {
           navSection.classList.toggle('show');
-        });
+        })
+
+        // for tracking the home page views
+        amplitude.track("Home Page Viewed");

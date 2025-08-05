@@ -41,3 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+ document.getElementById("applyBtn").addEventListener("click", function() {
+    amplitude.track("Job Applied", {
+      jobId: "123",
+      jobTitle: "Frontend Developer"
+    });
+    alert("Application tracked in Amplitude!");
+    });
+

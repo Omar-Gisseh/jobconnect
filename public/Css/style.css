@@ -18,7 +18,7 @@ img{
 
 .illustration-img-1{
     width:100px;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .hero{
@@ -102,7 +102,10 @@ input{
 
 .company-header{
     margin-top: 1em;
-    margin-left: 2em;
+    /* margin-left: 2em; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .company-image{
@@ -111,7 +114,7 @@ input{
 
 .attach{
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 
 .top-companies{
